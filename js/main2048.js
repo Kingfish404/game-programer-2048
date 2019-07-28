@@ -18,7 +18,7 @@ function prepareForMobile() {
         cellWidth=100;
         side=20;
     }
-    // $("#game").css("height",documentHeight*0.95);
+    $("#game").css("height",documentHeight);
     $("#box").css("width",boxWidth);
     $("#box").css("height",boxWidth);
     $("#box").css("padding",side);
@@ -38,9 +38,11 @@ function newGame() {
 }
 
 function Keydown() {
+
     switch (event.keyCode) {
         case 87:
         case 38:
+            event.preventDefault();
             if(moveUp()){
                 setTimeout(function () {
                     addOneNumber();
@@ -50,6 +52,7 @@ function Keydown() {
             break;
         case 65:
         case 37:
+            event.preventDefault();
             if(moveLeft()){
                 setTimeout(function () {
                     addOneNumber();
@@ -59,6 +62,7 @@ function Keydown() {
             break;
         case 68:
         case 39:
+            event.preventDefault();
             if(moveRight()){
                 setTimeout(function () {
                     addOneNumber();
@@ -68,6 +72,7 @@ function Keydown() {
             break;
         case 83:
         case 40:
+            event.preventDefault();
             if(moveDown()){
             setTimeout(function () {
                 addOneNumber();
@@ -84,12 +89,19 @@ document.addEventListener("touchstart",function (event) {
     startX=event.touches[0].pageX;
     startY=event.touches[0].pageY;
 });
+document.addEventListener("touchmove",function () {
+    event.preventDefault();
+});
+
 document.addEventListener("touchend",function (event) {
     endX=event.changedTouches[0].pageX;
     endY=event.changedTouches[0].pageY;
 
     var deltaX=endX-startX;
     var deltaY=endY-startY;
+    if(Math.abs(deltaX)<cellWidth&&Math.abs(deltaY)<cellWidth)
+        return ;
+
     if(Math.abs(deltaX)<Math.abs(deltaY)) {
         if(deltaY>0){
             if(moveDown()){
@@ -123,7 +135,6 @@ document.addEventListener("touchend",function (event) {
                     ifGameOver();
                 },200);
             }
-            else {}
         }
 });
 

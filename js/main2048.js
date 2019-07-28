@@ -18,7 +18,7 @@ function prepareForMobile() {
         cellWidth=100;
         side=20;
     }
-    $("#game").css("height",documentHeight);
+    // $("#game").css("height",documentHeight*0.95);
     $("#box").css("width",boxWidth);
     $("#box").css("height",boxWidth);
     $("#box").css("padding",side);
@@ -35,7 +35,6 @@ function newGame() {
     //随机生成两个数字
     addOneNumber();
     addOneNumber();
-
 }
 
 function Keydown() {

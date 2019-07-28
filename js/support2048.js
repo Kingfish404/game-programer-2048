@@ -126,8 +126,17 @@ function canMoveDown() {
 function ifGameOver() {
     if(noMorePlace()){
         setTimeout(function () {
-            alert("Game over");
-            newGame();
+            if(!canMoveDown()&&!canMoveUp()&&!canMoveLeft()&&!canMoveRight()){
+                if(score===520||score===201314) {
+                    alert("520 TO YOU,TOO");
+                    score=201314;
+                    $("#score").text(score);
+                }
+            else
+                {
+                    alert("Game over");
+                }
+            }
         },100);
     }
     else {

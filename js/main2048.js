@@ -18,8 +18,8 @@ function prepareForMobile() {
         cellWidth=100;
         side=20;
     }
-    $("#game").css("height",documentHeight*0.8);
-    $("footer").css("height",documentHeight*0.2);
+    $("#game").css("height",documentHeight*0.75);
+    $("footer").css("height",documentHeight*0.25);
     $("#box").css("width",boxWidth);
     $("#box").css("height",boxWidth);
     $("#box").css("padding",side);
@@ -97,7 +97,7 @@ document.addEventListener("touchend",function (event) {
 
     var deltaX=endX-startX;
     var deltaY=endY-startY;
-    if(Math.abs(deltaX)<cellWidth&&Math.abs(deltaY)<cellWidth)
+    if(Math.abs(deltaX)<cellWidth/2&&Math.abs(deltaY)<cellWidth/2)
         return ;
 
     if(Math.abs(deltaX)<Math.abs(deltaY)) {

@@ -49,7 +49,7 @@ function text(textNumber) {
         case 8:return "IT民工";
         case 16:return "程序猿";
         case 32:return "程序媛";
-        case 64:return "工程师";
+        case 64:return "IT工程师";
         case 128:return "开发者";
         case 256:return "架构师";
         case 512:return "技术总监";

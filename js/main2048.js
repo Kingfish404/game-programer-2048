@@ -1,8 +1,6 @@
 var board = [];
 var score = 0;
-var maxScore = 0;
 var moveCharge=[];
-
 var startX = 0;
 var startY =0;
 var endX =0;
@@ -29,7 +27,7 @@ function prepareForMobile() {
 
     $(".cell").css("width",cellWidth);
     $(".cell").css("height",cellWidth);
-    $(".cell").css("border-radius",0.02*cellWidth);
+    $(".cell").css("border-radius","5px");
 }
 
 function newGame() {
@@ -92,7 +90,6 @@ document.addEventListener("touchstart",function (event) {
     startX=event.touches[0].pageX;
     startY=event.touches[0].pageY;
 });
-
 document.addEventListener("touchend",function (event) {
     endX=event.changedTouches[0].pageX;
     endY=event.changedTouches[0].pageY;
@@ -112,7 +109,7 @@ document.addEventListener("touchend",function (event) {
             }
         }
         else
-        if(moveUp()){
+            if(moveUp()){
             setTimeout(function () {
                 addOneNumber();
                 ifGameOver();
@@ -129,7 +126,7 @@ document.addEventListener("touchend",function (event) {
                 }
             }
             else
-            if(moveLeft()){
+                if(moveLeft()){
                 setTimeout(function () {
                     addOneNumber();
                     ifGameOver();
@@ -257,12 +254,13 @@ function addOneNumber() {
     var times=0;
     var randomX = Math.floor(Math.random()*4);
     var randomY = Math.floor(Math.random()*4);
-    while (times<20) {
+    while (times<16) {
         if(board[randomX][randomY]===0)break;
         randomX = Math.floor(Math.random()*4);
         randomY = Math.floor(Math.random()*4);
+        times++;
     }
-    if(times===20){
+    if(times===16){
         for(var r=0;r<4;r++)
             for (var c = 0; c < 4; c++) {
                 if(board[r][c]===0){
@@ -287,7 +285,6 @@ function updateNumber() {
                 divs.style.display="none";
             }
             document.getElementById("box").appendChild(divs);
-
         }
     }
     score = 0;

@@ -18,7 +18,8 @@ function prepareForMobile() {
         cellWidth=100;
         side=20;
     }
-    $("#game").css("height",documentHeight);
+    $("#game").css("height",documentHeight*0.8);
+    $("footer").css("height",documentHeight*0.2);
     $("#box").css("width",boxWidth);
     $("#box").css("height",boxWidth);
     $("#box").css("padding",side);
@@ -88,9 +89,6 @@ function Keydown() {
 document.addEventListener("touchstart",function (event) {
     startX=event.touches[0].pageX;
     startY=event.touches[0].pageY;
-});
-document.addEventListener("touchmove",function () {
-    event.preventDefault();
 });
 
 document.addEventListener("touchend",function (event) {

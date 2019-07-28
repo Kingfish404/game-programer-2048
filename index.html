@@ -16,13 +16,13 @@
 </head>
 
 <body>
-<div class="container" id="game">
-<header class="row">
+<div class="container-fluid" id="game">
+    <header class="row">
     <h1 class="col-sm-6 col-md-12">程序员2048</h1>
     <button class="col-sm-4 col-sd-offset-1 col-md-offset-4" type="button" id="BTN">开始</button>
     <p class="col-sm-12 col-md-12">分数：<span id="score">0</span></p>
-</header>
-<div id="box">
+    </header>
+    <div id="box">
     <div class="cell" id="cell-0-0"><p></p></div>
     <div class="cell" id="cell-0-1"><p></p></div>
     <div class="cell" id="cell-0-2"><p></p></div>
@@ -39,9 +39,12 @@
     <div class="cell" id="cell-3-1"><p></p></div>
     <div class="cell" id="cell-3-2"><p></p></div>
     <div class="cell" id="cell-3-3"><p></p></div>
+    </div>
+
 </div>
-    <br><br><br>
-</div>
+<footer class="container-fluid">
+
+</footer>
 <script>
     document.getElementById("BTN").onclick=function () {
         newGame();

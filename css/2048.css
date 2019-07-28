@@ -72,3 +72,11 @@ header p{
     text-align: center;
     z-index: 0;
 }
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color:#505f6e ;
+    z-index: -999;
+}

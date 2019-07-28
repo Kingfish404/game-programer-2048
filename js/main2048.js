@@ -91,21 +91,41 @@ document.addEventListener("touchend",function (event) {
 
     var deltaX=endX-startX;
     var deltaY=endY-startY;
-    if(deltaX>cellWidth/2||deltaY>cellWidth/2){
         if(Math.abs(deltaX)>=Math.abs(deltaY)){
-            if(deltaX>0)
-                moveRight();
+            if(deltaX>0){
+                if(moveRight()){
+                    setTimeout(function () {
+                        addOneNumber();
+                        ifGameOver();
+                    },200);
+                }
+            }
             else
-                moveLeft();
+            if(moveLeft()){
+                setTimeout(function () {
+                    addOneNumber();
+                    ifGameOver();
+                },200);
+            }
         }
         else {
-            if(deltaY>0)
-                moveDown();
+            if(deltaY>0){
+                if(moveDown()){
+                    setTimeout(function () {
+                        addOneNumber();
+                        ifGameOver();
+                    },200);
+                }
+            }
             else
-                moveUp();
+                if(moveUp()){
+                    setTimeout(function () {
+                        addOneNumber();
+                        ifGameOver();
+                    },200);
+                }
 
         }
-    }
 });
 
 function moveUp() {

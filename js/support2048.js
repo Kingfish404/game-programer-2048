@@ -134,7 +134,7 @@ function ifGameOver() {
                 }
             else
                 {
-                    alert("Game over");
+                    alert("Game over and 你的分数是："+(score-4));
                 }
             }
         },100);

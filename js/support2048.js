@@ -1,5 +1,5 @@
 documentWidth = window.screen.availWidth;
-documentHeight =window.screen.availHeight;
+documentHeight =window.body.clientHeight;
 boxWidth = documentWidth*0.92;
 side = documentWidth*0.04;
 cellWidth = documentWidth*0.18;

@@ -91,7 +91,24 @@ document.addEventListener("touchend",function (event) {
 
     var deltaX=endX-startX;
     var deltaY=endY-startY;
-        if(Math.abs(deltaX)>=Math.abs(deltaY)){
+    if(Math.abs(deltaX)<Math.abs(deltaY)) {
+        if(deltaY>0){
+            if(moveDown()){
+                setTimeout(function () {
+                    addOneNumber();
+                    ifGameOver();
+                },200);
+            }
+        }
+        else
+        if(moveUp()){
+            setTimeout(function () {
+                addOneNumber();
+                ifGameOver();
+            },200);
+        }
+    }
+    else if(Math.abs(deltaX)>Math.abs(deltaY)){
             if(deltaX>0){
                 if(moveRight()){
                     setTimeout(function () {
@@ -107,24 +124,7 @@ document.addEventListener("touchend",function (event) {
                     ifGameOver();
                 },200);
             }
-        }
-        else {
-            if(deltaY>0){
-                if(moveDown()){
-                    setTimeout(function () {
-                        addOneNumber();
-                        ifGameOver();
-                    },200);
-                }
-            }
-            else
-                if(moveUp()){
-                    setTimeout(function () {
-                        addOneNumber();
-                        ifGameOver();
-                    },200);
-                }
-
+            else {}
         }
 });
 

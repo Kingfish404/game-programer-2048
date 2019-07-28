@@ -1,0 +1,74 @@
+#game{
+    background-color: #505f6e;
+}
+
+header{
+    margin: 0 auto;
+    text-align:center;
+    user-select: none;
+}
+
+header h1{
+    height: 70px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+header button{
+    margin:25px 0;
+    padding:10px 10px;
+
+    font-size: 20px;
+    font-family: Arial sans-serif;
+    color:white;
+    background-color: #3e4e5f;
+
+    border:none;
+    border-radius: 10px;
+    outline:none;
+
+    transition: scale 1s;
+}
+header button:link{}
+header button:visited{}
+header button:hover{transform: scale(1.1);}
+header button:active{background-color: #202830;
+}
+
+header p{
+    color: white;
+    font-family: "微软雅黑 Light", "等线 Light", sans-serif;
+    font-size: 20px;
+
+}
+
+#box{
+    height:500px;
+    width: 500px;
+    padding:10px;
+    margin:0 auto;
+    background-color: #405161;
+    border-radius: 10px;
+    position: relative;
+    user-select: none;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #606e7b;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.number-cell{
+    width: 0;
+    height: 0;
+    border-radius: 6px;
+    position: absolute;
+    font:bold 0/100px 'Arial' ;
+    text-align: center;
+    z-index: 0;
+}

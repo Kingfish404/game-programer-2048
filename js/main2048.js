@@ -1,6 +1,8 @@
 var board = [];
 var score = 0;
 var maxScore = 0;
+var moveCharge=[];
+
 var startX = 0;
 var startY =0;
 var endX =0;
@@ -147,10 +149,11 @@ function moveUp() {
                             board[n][c]=board[r][c];
                             board[r][c]=0;
                         }
-                        else if(board[n][c]===board[r][c]&&noTraverseUp(r,c,n,board)){
+                        else if(board[n][c]===board[r][c]&&noTraverseUp(r,c,n,board)&&moveCharge[n][c]){
                             moveNumberAnimate(r,c,n,c);
                             board[n][c]+=board[r][c];
                             board[r][c]=0;
+                            moveCharge[n][c]=false;
                         }
                     }
         return true;
@@ -168,10 +171,11 @@ function moveLeft() {
                             board[r][n]=board[r][c];
                             board[r][c]=0;
                         }
-                        else if(board[r][n]===board[r][c]&&noTraverseLeft(r,c,n,board)){
+                        else if(board[r][n]===board[r][c]&&noTraverseLeft(r,c,n,board)&&moveCharge[n][c]){
                             moveNumberAnimate(r,c,r,n);
                             board[r][n]+=board[r][c];
                             board[r][c]=0;
+                            moveCharge[n][c]=false;
                         }
                     }
         return true;
@@ -190,10 +194,11 @@ function moveRight() {
                             board[r][n]=board[r][c];
                             board[r][c]=0;
                         }
-                        else if(board[r][n]===board[r][c]&&noTraverseRight(r,c,n,board)){
+                        else if(board[r][n]===board[r][c]&&noTraverseRight(r,c,n,board)&&moveCharge[n][c]){
                             moveNumberAnimate(r,c,r,n);
                             board[r][n]+=board[r][c];
                             board[r][c]=0;
+                            moveCharge[n][c]=false;
                         }
                     }
         return true;
@@ -211,10 +216,11 @@ function moveDown() {
                             board[n][c]=board[r][c];
                             board[r][c]=0;
                         }
-                        else if(board[n][c]===board[r][c]&&noTraverseDown(r,c,n,board)){
+                        else if(board[n][c]===board[r][c]&&noTraverseDown(r,c,n,board)&&moveCharge[n][c]){
                             moveNumberAnimate(r,c,n,c);
                             board[n][c]+=board[r][c];
                             board[r][c]=0;
+                            moveCharge[n][c]=false;
                         }
                     }
         return true;
@@ -236,8 +242,10 @@ function init() {
     //  初始化游戏内容
     for(var r=0;r<4;r++) {
         board[r]=[];
+        moveCharge[r]=[];
         for (var c = 0; c < 4; c++) {
             board[r][c] = 0 ;
+            moveCharge[r][c]=true;
         }
     }
 }
@@ -283,13 +291,13 @@ function updateNumber() {
         }
     }
     score = 0;
-    for(var r=0;r<4;r++) {
+    for(var r=0;r<4;r++)
         for (var c = 0; c < 4; c++) {
             score+=board[r][c];
             var cell = document.getElementById("number-cell-" + r + "-" + c + "");
             cell.innerText = text(board[r][c]);
             textAnimate(r, c, board[r][c]);
             $("#score").text(score-4);
+            moveCharge[r][c]=true;
             }
-        }
     }

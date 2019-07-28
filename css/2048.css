@@ -9,14 +9,14 @@ header{
 }
 
 header h1{
-    height: 70px;
-    font-size: 60px;
+    height:45px;
+    font-size: 50px;
     font-weight: bold;
     color: white;
 }
 
 header button{
-    margin:25px 0;
+    margin:15px 0;
     padding:10px 10px;
 
     font-size: 20px;

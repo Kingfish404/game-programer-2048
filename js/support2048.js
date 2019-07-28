@@ -1,4 +1,4 @@
-documentWidth = window.screen.availWidth;
+documentWidth = window.screen.availWidth*0.9;
 documentHeight =window.screen.availHeight;
 boxWidth = documentWidth*0.92;
 side = documentWidth*0.04;

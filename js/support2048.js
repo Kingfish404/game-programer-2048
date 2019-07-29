@@ -2,8 +2,7 @@ documentWidth = window.screen.availWidth*0.9;
 documentHeight =window.screen.availHeight;
 boxWidth = documentWidth*0.92;
 side = documentWidth*0.04;
-cellWidth = documentWidth*0.18;
-
+cellWidth = documentWidth*0.2;
 
 function getTop(h, l) {
     return side+h*(side+cellWidth);

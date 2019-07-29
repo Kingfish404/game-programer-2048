@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 function prepareForMobile() {
     if(documentWidth>550){
-        boxWidth=500;
+        boxWidth=460;
         cellWidth=100;
         side=20;
     }

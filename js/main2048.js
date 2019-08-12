@@ -6,7 +6,6 @@ var startY =0;
 var endX =0;
 var endY=0;
 
-
 $(document).ready(function () {
     prepareForMobile();
     newGame();
@@ -281,9 +280,7 @@ function updateNumber() {
             divs.id="number-cell-"+r+"-"+c+"";
             divs.className="number-cell";
             divs.style="height:0px;width:0px;top:"+(getTop(r,c)+cellWidth/2)+"px;left:"+(getLeft(r,c)+cellWidth/2)+"px";
-            if(board[r][c]===0){
-                divs.style.display="none";
-            }
+            if(board[r][c]===0){divs.style.display="none";}
             document.getElementById("box").appendChild(divs);
         }
     }

@@ -2,48 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9aae84-96e3-4502-8684-13af1d7a846e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/live2d/css/live2d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/js/live2d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/js/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/message.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/model.moc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath Dere1.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath Dere2.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath Dere3.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath1.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath2.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath3.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath4.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath5.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath6.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath7.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath8.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Breath9.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Fail.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Sleeping.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Success.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Sukebei1.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Sukebei2.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Sukebei3.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch Dere1.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch Dere2.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch Dere3.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch Dere4.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch Dere5.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch Dere6.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch1.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch2.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch3.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch4.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch5.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/Touch6.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/motions/WakeUp.mtn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/live2d/model/tia/textures/default-costume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/model.2048/texture_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/model.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/model.moc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/motions/Anone_Synced.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/motions/Dance.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/motions/Idle.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/live2d/model/kesshouban_v2/motions/Nemui.mtn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main2048.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main2048.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,8 +28,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+                <state relative-caret-position="234">
+                  <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -73,8 +40,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/live2d/css/live2d.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+                <state relative-caret-position="373">
+                  <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -91,8 +58,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/main2048.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="275" column="31" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
+                <state relative-caret-position="164">
+                  <caret line="269" column="5" lean-forward="true" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -101,6 +68,11 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tia</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -108,8 +80,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/main2048.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/live2d/css/live2d.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -178,18 +150,33 @@
       <updated>1564834657716</updated>
       <workItem from="1564834660497" duration="97000" />
       <workItem from="1564885177717" duration="1639000" />
-      <workItem from="1565571818553" duration="170000" />
+      <workItem from="1565571818553" duration="899000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1565571999943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565571999943</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1565572177829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565572177829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1906000" />
+    <option name="totallyTimeSpent" value="2635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -211,28 +198,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/2048.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main2048.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="275" column="31" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
+        <state relative-caret-position="164">
+          <caret line="269" column="5" lean-forward="true" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/live2d/css/live2d.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="373">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        <state relative-caret-position="234">
+          <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

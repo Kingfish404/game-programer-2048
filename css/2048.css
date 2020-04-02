@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    height: 100%;
+    background-color: #505f6e;
+}
+
 #game{
     width: 100%;
     background-color: #505f6e;
@@ -29,7 +35,7 @@ header h1{
 }
 
 header button{
-    margin:15px 0;
+    margin:2% 0;
     padding:10px 10px;
 
     font-size: 20px;
@@ -86,9 +92,27 @@ header p{
 }
 
 footer{
-    width: 100%;
-    position: fixed;
+    padding: 5% 10% 0;
+}
+
+footer address{
+    text-align: center;
+    margin: 5% 10% 0;
     bottom: 0;
-    background-color:#505f6e ;
-    z-index: -999;
+}
+
+@media screen and (min-width:900px)
+{
+    footer{
+        padding-top: 0;
+    }
+    footer br{
+        display: none;
+    }
+    footer h6,p{
+        padding: 0;
+    }
+    footer address{
+        margin: 0;
+    }
 }

@@ -18,7 +18,6 @@ function prepareForMobile() {
         side=20;
     }
     $("#game").css("height",documentHeight*0.75);
-    $("footer").css("height",documentHeight*0.25);
     $("#box").css("width",boxWidth);
     $("#box").css("height",boxWidth);
     $("#box").css("padding",side);
@@ -38,7 +37,7 @@ function newGame() {
 }
 
 function Keydown() {
-
+    console.log(event.keyCode);
     switch (event.keyCode) {
         case 87:
         case 38:
